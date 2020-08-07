@@ -1,7 +1,10 @@
 # don't forget to add: require 'pry'
 
+require "pry"
+
 def get_user_input
-  gets.chomp
+  x = gets.chomp
+  x = x.to_i
 end
 
 def prompt_user
@@ -11,11 +14,12 @@ def prompt_user
 end
 
 def selection(num)
-  if num = 1
-     "YUM YUM MUNCH MUNCH MUNCH"
-  elsif num = 2
-     "HAM HAM HAM IN MY TUMMY"
+  if num == 1
+     word = "YUM YUM MUNCH MUNCH MUNCH"
+  elsif num == 2
+     word = "HAM HAM HAM IN MY TUMMY"
   end
+  return word
 end
 
 def runner
